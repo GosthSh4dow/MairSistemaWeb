@@ -1,0 +1,78 @@
+/* Reset general para el body y el html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Estilo para el dashboard principal */
+  .dashboard {
+    display: flex;
+    min-height: 100vh; /* Asegura que el dashboard ocupe al menos todo el alto de la ventana */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .sidebar {
+    width: 180px; /* Ancho del sidebar */
+    padding: 20px;
+    background-color: #1b1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Agrega scroll solo al sidebar si es necesario */
+    color: #ffffff;
+  }
+  
+  .avatar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .menu {
+    margin-top: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .menu-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: green ;
+  }
+  
+  .menu-item.active {
+    color: green;
+    background-color: #fff;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-y: auto; /* Permite el scroll solo en el contenido principal */
+  }
+  
+  .content-header {
+    padding: 10px; /* Ajusta el padding del header */
+    font-size: 20px; /* Reduce el tamaño del texto del header */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .content {
+    /* Estilos adicionales para el contenido principal */
+  }
+  
